@@ -5,6 +5,13 @@
 	max-width: 100% !important;
 	margin: 0;
 }
+
+@media (prefers-color-scheme: dark) {
+	.markdown-body iframe {
+		border-color: rgba(128, 128, 128, 0.7);
+	}
+}
+
 .markdown-body ul {
 	list-style: disc;
 }
@@ -14,14 +21,17 @@
 .markdown-body li {
 	list-style: inherit;
 }
+
 .markdown-body img.equation {
 	margin: 0 0.1em;
 	max-width: 100% !important;
 	vertical-align: middle;
 }
+
 .markdown-body pre {
 	position: relative;
 }
+
 .markdown-body pre > code.hljs[lang]:before {
 	content: attr(lang);
 	position: absolute;
@@ -29,9 +39,17 @@
 	top: 2px;
 	color: hsla(0, 0%, 54.9%, 0.8);
 }
+
+@media (prefers-color-scheme: dark) {
+	.markdown-body pre > code.hljs[lang]:before {
+		color: hsla(0, 0%, 74.9%, 0.6);
+	}
+}
+
 .markdown-body pre > code.hljs[lang][lang="bash"]:before {
 	content: "";
 }
+
 .markdown-body pre > code.copyable + .copy-code-btn {
 	position: absolute;
 	top: 6px;
@@ -42,22 +60,40 @@
 	color: hsla(0, 0%, 54.9%, 0.8);
 	transition: color 0.1s;
 }
+
+@media (prefers-color-scheme: dark) {
+	.markdown-body pre > code.copyable + .copy-code-btn {
+		color: hsla(0, 0%, 74.9%, 0.6);
+	}
+}
+
 .markdown-body pre > code.copyable + .copy-code-btn:active {
 	opacity: 0.7;
 }
+
 .markdown-body pre > code.copyable + .copy-code-btn:hover {
 	color: #8c8c8c;
 }
+
+@media (prefers-color-scheme: dark) {
+	.markdown-body pre > code.copyable + .copy-code-btn:hover {
+		color: #b0b0b0;
+	}
+}
+
 .markdown-body pre > code.copyable.hljs[lang]:before {
 	right: 70px;
 }
+
 .markdown-body pre pre > code .copy-code-btn {
 	display: none;
 }
+
 .markdown-body pre pre > code.hljs[lang]:before {
 	top: 2px;
 	right: 15px;
 }
+
 .markdown-body iframe {
 	display: block;
 	width: 100%;
@@ -66,12 +102,14 @@
 	border: 0.5px solid rgba(128, 128, 128, 0.4);
 	margin: 15px 0;
 }
+
 .markdown-body input[type="radio"],
 .markdown-body input[type="checkbox"],
 .markdown-body input[type="radio"] + label,
 .markdown-body input[type="checkbox"] + label {
 	vertical-align: baseline;
 }
+
 @media screen and (max-width: 600px) {
 	.markdown-body iframe {
 		height: 110vw;

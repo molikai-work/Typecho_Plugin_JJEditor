@@ -1,5 +1,8 @@
 # Typecho_Plugin_JJEditor
 
+> 自分叉后已修改，可能不合适于您使用，因为修改的偏好是基于个人的，  
+> 请关注原项目 [mulingyuer/Typecho_Plugin_JJEditor](https://github.com/mulingyuer/Typecho_Plugin_JJEditor)
+
 Typecho 插件-《掘金编辑器》
 
 这段时间逛掘金发现掘金居然开源了文章编辑器，于是想着自己也照葫芦画瓢整一个给博客用，于是花了点时间研究，发现这玩意文档跟没有一样，难受的一批，折腾了好久才搞出来这一版。

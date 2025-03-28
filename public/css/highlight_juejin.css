@@ -3,6 +3,13 @@
 	color: #333;
 	background: #f8f8f8;
 }
+@media (prefers-color-scheme: dark) {
+	.markdown-body pre,
+	.markdown-body pre > code.hljs {
+		color: #f8f8f8;
+		background: #262626;
+	}
+}
 .hljs-comment,
 .hljs-quote {
 	color: #998;
